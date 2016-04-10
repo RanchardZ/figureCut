@@ -54,3 +54,5 @@ def process(cropperSourceDir, holderSourceDir, cropperPerImage, holderPerCropper
 	embeddedPoolDir = os.path.join(dirName, 'embeddedPoolDir')
 	os.mkdir(embeddedPoolDir)
 	generateEmbeddedPool(cropperPoolDir, holderSourceResizedDir, embeddedPoolDir, holderPerCropper)
+
+	
