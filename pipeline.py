@@ -55,4 +55,10 @@ def process(cropperSourceDir, holderSourceDir, cropperPerImage, holderPerCropper
 	os.mkdir(embeddedPoolDir)
 	generateEmbeddedPool(cropperPoolDir, holderSourceResizedDir, embeddedPoolDir, holderPerCropper)
 
-	
+
+if __name__ == '__main__':
+	cropperSourceDir = sys.argv[1]
+	holderSourceDir = sys.argv[2]
+	cropperPerImage = int(sys.argv[3])
+	holderPerCropper = int(sys.argv[4])
+	process(cropperSourceDir, holderSourceDir, cropperPerImage, holderPerCropper)
